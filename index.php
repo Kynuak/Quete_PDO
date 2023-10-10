@@ -51,7 +51,7 @@
         } else {
             //Si erreurs affichage des erreurs
             foreach($errors as $error){
-                echo $error;
+                echo $error . "<br>";
             }
         }
 
@@ -76,10 +76,10 @@
     <form action="" method="POST">
 
         <label for="firstname">First Name :</label>
-        <input type="text" id="firstname" name="firstname" ></input>
+        <input type="text" id="firstname" name="firstname" required="true"></input>
         <br>
         <label for="lastname">Last Name :</label>
-        <input type="text" id="lastname" name="lastname" ></input>
+        <input type="text" id="lastname" name="lastname" required="true"></input>
 
         <input type="submit"></input>
 
